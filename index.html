@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,36 +11,45 @@
         <!-- <img src="filer/keyboard.png" alt=""> -->
         <div class="row0">
             <div class="button" id="Escape">esc</div>
-            <div class="button" id="F1"></div>
-            <div class="button" id="F2"></div>
-            <div class="button" id="F3"></div>
-            <div class="button" id="F4"></div>
+            <div class="button" id="F1">F1</div>
+            <div class="button" id="F2">F2</div>
+            <div class="button" id="F3">F3</div>
+            <div class="button" id="F4">F4</div>
             <div class="button" id="AudioVolumeMute">🔇</div>
             <div class="button" id="AudioVolumeDown">🔉</div>
             <div class="button" id="AudioVolumeUp">🔊</div>
-            <div class="button" id="F8"></div>
-            <div class="button" id="F9"></div>
-            <div class="button" id="Insert">insert</div>
-            <div class="button" id="F11"></div>
-            <div class="button" id="F12"></div>
+            <div class="button" id="F8">F8</div>
+            <div class="button" id="F9">F9</div>
+            <div class="button" id="F10">F10</div>
+            <div class="button" id="F11">✈︎</div>
+            <div class="button" id="F12">F12</div>
             <div class="button" id="prt_scr">prt scr</div>
-            <div class="button" id="Power"></div>
+            <div class="button" id="Power">⏻</div>
             <div class="button" id="Delete">delete</div>
         </div>
 
         <div class="row1">
             <div class="button normal" id="Backquote">§</div>
-            <div class="button normal" id="Digit1">1</div>
+            <div class="button normal columnContainer" id="Digit1">
+                <div>!</div>
+                <div>1</div>
+            </div>
             <div class="button normal" id="Digit2">2</div>
             <div class="button normal" id="Digit3">3</div>
             <div class="button normal" id="Digit4">4</div>
             <div class="button normal" id="Digit5">5</div>
-            <div class="button normal" id="Digit6">6</div>
+            <div class="button normal columnContainer" id="Digit6">
+                <div>&</div>
+                <div>6</div>
+            </div>
             <div class="button normal" id="Digit7">7</div>
             <div class="button normal" id="Digit8">8</div>
             <div class="button normal" id="Digit9">9</div>
             <div class="button normal" id="Digit0">0</div>
-            <div class="button normal" id="Minus">+</div>
+            <div class="button normal columnContainer" id="Minus">
+                <div>?</div>
+                <div>+</div>
+            </div>
             <div class="button normal" id="Equal">´</div>
             <div class="button" id="Backspace">⟵</div>
             <div class="button normal" id="Home">home</div>
@@ -79,7 +88,7 @@
                 <div class="button normal" id="KeyL">L</div>
                 <div class="button normal" id="Semicolon">Ö</div>
                 <div class="button normal" id="Quote">Ä</div>
-                <div class="button normal" id="Backslash">*</div>
+                <div class="button normal" id="Backslash">'</div>
             </div>
 
             <div class="button" id="Enter"> ↩</div>
@@ -89,7 +98,7 @@
 
         <div class="row4">
             <div class="button normal" id="ShiftLeft">↑</div>
-            <div class="button normal" id="IntlBackslash">></div>
+            <div class="button normal" id="IntlBackslash"><</div>
             <div class="button normal" id="KeyZ">Z</div>
             <div class="button normal" id="KeyX">X</div>
             <div class="button normal" id="KeyC">C</div>
@@ -97,9 +106,18 @@
             <div class="button normal" id="KeyB">B</div>
             <div class="button normal" id="KeyN">N</div>
             <div class="button normal" id="KeyM">M</div>
-            <div class="button normal" id="Comma">,</div>
-            <div class="button normal" id="Period">.</div>
-            <div class="button normal" id="Slash">-</div>
+            <div class="button normal columnContainer" id="Comma">
+                <div>;</div>
+                <div>,</div>
+            </div>
+            <div class="button normal columnContainer" id="Period">
+                <div>:</div>
+                <div>.</div>
+            </div>
+            <div class="button normal columnContainer" id="Slash">
+                <div>_</div>
+                <div>-</div>
+            </div>
             <div class="button" id="ShiftRight">↑</div>
             <div class="button normal" id="End">end</div>
         </div>
@@ -107,11 +125,23 @@
         <div class="row5">
             <div class="button normal" id="ControlLeft">ctrl</div>
             <div class="button normal" id="Fn">fn</div>
-            <div class="button normal" id="MetaLeft"></div>
+            <div class="button normal columnContainer" id="MetaLeft">
+                <div class="squareContainer">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+                <div class="squareContainer">
+                    <div class="square"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
             <div class="button normal" id="AltLeft">alt</div>
             <div class="button" id="Space"></div>
             <div class="button normal" id="AltRight">alt gr</div>
-            <div class="button normal" id="ContextMenu"></div>
+            <div class="button normal columnContainer" id="ContextMenu"> 
+                <div>=</div>
+                <div>=</div>   
+            </div>
             <div class="button normal" id="ControlRight">ctrl</div>
             <div class="button normal" id="ArrowLeft"><</div>
             <div class="upNdown_arrow">

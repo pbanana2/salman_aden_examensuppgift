@@ -1,7 +1,23 @@
 document.addEventListener("keydown", (event) =>{
-    document.getElementById(event.code).style="color:blue";
+    let code = document.getElementById(event.code);
+    console.log(event)
+    if(code != CapsLock){
+        code.style="background-color:blue"
+    }
+    else{
+        if(code.style.backgroundColor != "blue"){
+            code.style="background-color:blue"
+        }
+        else{
+            code.style="background-color:black"
+        }
+    }
 });
 
 document.addEventListener("keyup", (event) =>{
-    document.getElementById(event.code).style="event.code.color";
-});
+    let code = document.getElementById(event.code);
+    
+    if(code != CapsLock){
+        code.style = "background-color:black"
+    }
+})

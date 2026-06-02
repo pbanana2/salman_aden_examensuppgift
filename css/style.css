@@ -79,12 +79,17 @@ main{
 }
 
 .button{
+    background-color: black;
+    color: white;
     display: flex;
-    border: solid;
     margin: 7px;
 
     align-items: center;
     justify-content: center;
+}
+
+.button:hover{
+    background-color: blue;
 }
 
 #ArrowUp{
@@ -96,14 +101,41 @@ main{
 }
 
 .normal{
-    width: 50px;
+    width: 55px;
 }
 
 #Tab{
     flex-direction: column;
 }
 
+.border{
+    height: 25px;
+    width: 20px;
+    border: solid;
+
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.columnContainer{
+    flex-direction: column;
+}
+
 #ShiftRight{
     justify-content: flex-start;
     padding: 10px;
+}
+
+.square{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 0.5px;
+}
+
+.squareContainer{
+    display: flex;
+    flex-direction: row;
 }
