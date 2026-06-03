@@ -8,7 +8,15 @@ main{
 }
 
 #textDiv{
+    display: flex;
+    min-height: 20px;
+    min-width: 100px;
+    max-width: 900px;
+    border: solid;
     justify-self: center;
+    align-content: center;
+    justify-content: center;
+    text-wrap: normal;
 }
 
 .row0{

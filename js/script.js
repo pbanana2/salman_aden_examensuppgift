@@ -2,13 +2,13 @@ let textDiv = document.getElementById("textDiv")
 
 document.addEventListener("keydown", (event) =>{
     let code = document.getElementById(event.code);
-    console.log(event)
+
     if(code != CapsLock){
         code.style="background-color:blue"
         if (AltRight.style.backgroundColor != "blue"){
             if (code === Backquote || code === Digit1 || code === Digit2 || code === Digit3 
                     || code === Digit5 || code === Digit6 || code === Digit7 
-                    || code === Digit0 || code == Minus ||code === KeyQ
+                    || code === Digit0 || code == Minus || code === KeyQ
                     || code === KeyW || code === KeyE || code === KeyR || code === KeyT || code === KeyY 
                     || code === KeyU || code === KeyI || code === KeyO || code === KeyP 
                     || code === KeyA || code === KeyS || code === KeyD || code === KeyF 
@@ -18,17 +18,21 @@ document.addEventListener("keydown", (event) =>{
                     || code === Comma || code === Period || code === Slash || code === BracketLeft
                     || code === Semicolon || code === Quote || code === IntlBackslash){
                 let text = document.createTextNode(event.key);
-                textDiv.append(text)
+                textDiv.appendChild(text)
             }
             else if(code === Digit4 || code === Digit8 || code === Digit9){
                 if (ShiftLeft.style.backgroundColor != "blue" && ShiftRight.style.backgroundColor != "blue"){
                     let text = document.createTextNode(event.key);
-                    textDiv.append(text)
+                    textDiv.appendChild(text)
                 }
             }
         }
-        else if(code === Delete){
-            textDiv.remove(Text)
+
+        if(code === Backspace){
+            textDiv.removeChild(textDiv.lastChild)
+        }
+        if(code === Delete){
+            textDiv.innerText = ""
         }
     }
     else{
