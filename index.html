@@ -8,9 +8,11 @@
 </head>
 <body>
     <main>
-        <div id="textDiv"></div>
+        <div id="textDiv">
+            <div id="visual">|</div>
+        </div>
         <!-- <img src="filer/keyboard.png" alt=""> -->
-        <div class="row0">
+        <div class="row R row0">
             <div class="button" id="Escape">esc</div>
             <div class="button" id="F1">F1</div>
             <div class="button" id="F2">F2</div>
@@ -29,7 +31,7 @@
             <div class="button" id="Delete">delete</div>
         </div>
 
-        <div class="row1">
+        <div class="row L row1">
             <div class="button normal" id="Backquote">§</div>
             <div class="button normal columnContainer" id="Digit1">
                 <div>!</div>
@@ -75,7 +77,7 @@
         </div>
 
         <div class="container">
-            <div class="row2">
+            <div class="row R row2">
                 <div class="button columnContainer" id="Tab">
                     <div>|←</div>
                     <div>→|</div>
@@ -94,7 +96,7 @@
                 <div class="button normal" id="BracketRight">^</div>
             </div>
 
-            <div class="row3">
+            <div class="row L row3">
                 <div class="button" id="CapsLock">caps lock</div>
                 <div class="button normal" id="KeyA">A</div>
                 <div class="button normal" id="KeyS">S</div>
@@ -113,12 +115,12 @@
                 </div>
             </div>
 
-            <div class="button" id="Enter"> ↩</div>
-            <div class="button normal" id="PageUp">pg up</div>
-            <div class="button normal" id="PageDown">pg dn</div>
+            <div class="button R" id="Enter"> ↩</div>
+            <div class="button normal R" id="PageUp">pg up</div>
+            <div class="button normal R" id="PageDown">pg dn</div>
         </div>
 
-        <div class="row4">
+        <div class="row R row4">
             <div class="button normal" id="ShiftLeft">↑</div>
             <div class="button normal columnContainer" id="IntlBackslash">
                 <div>></div>
@@ -147,7 +149,7 @@
             <div class="button normal" id="End">end</div>
         </div>
 
-        <div class="row5">
+        <div class="row L row5">
             <div class="button normal" id="ControlLeft">ctrl</div>
             <div class="button normal" id="Fn">fn</div>
             <div class="button normal columnContainer" id="MetaLeft">
@@ -163,10 +165,8 @@
             <div class="button normal" id="AltLeft">alt</div>
             <div class="button" id="Space"></div>
             <div class="button normal" id="AltRight">alt gr</div>
-            <div class="button normal columnContainer" id="ContextMenu"> 
-                <div>=</div>
-                <div>=</div>   
-            </div>
+            <div class="button normal columnContainer" id="ContextMenu">
+                <div class="menuIcon">≡</div></div>
             <div class="button normal" id="ControlRight">ctrl</div>
             <div class="button normal" id="ArrowLeft"><</div>
             <div class="upNdown_arrow">
@@ -176,6 +176,7 @@
             <div class="button normal" id="ArrowRight">></div>
         </div>
     </main>
+    <audio src=""></audio>
 
     <script src="js/script.js"></script>
 </body>

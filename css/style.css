@@ -8,19 +8,57 @@ main{
 }
 
 #textDiv{
+    padding: 5px;
     display: flex;
-    min-height: 20px;
+    min-height: 10px;
     min-width: 100px;
-    max-width: 900px;
+    max-width: 1300px;
     border: solid;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    text-wrap: normal;
+}
+
+#visual{
+    animation: flash 1.5s linear infinite;
+}
+
+@keyframes flash{
+    50%{
+        opacity: 0;
+    }
+}
+
+.menuIcon{
+    border: solid 1.5px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.row{
+    display: grid;
+}
+
+.R{
+    animation: moveRight linear 0s infinite;
+    animation-duration: 0s;
+}
+
+.L{
+    animation: moveLeft linear 0s infinite;
+    animation-duration: 0s;
+}
+
+@keyframes moveRight{
+    50%{
+        transform: translate(80px);
+    }
+}
+
+@keyframes moveLeft{
+    50%{
+        transform: translate(-80px);
+    }
 }
 
 .row0{
-    display: grid;
     width: 1130px;
     height: 40px;
 
@@ -28,7 +66,6 @@ main{
 }
 
 .row1{
-    display: grid;
     width: 1133px;
     height: 65px;
 
@@ -45,7 +82,6 @@ main{
 }
 
 .row2{
-    display: grid;
     width: 990px;
     height: 65px;
 
@@ -54,7 +90,6 @@ main{
 }
 
 .row3{
-    display: grid;
     width: 990px;
     height: 65px;
 
@@ -69,7 +104,6 @@ main{
 }
 
 .row4{
-    display: grid;
     width: 1135px;
     height: 65px;
 
@@ -77,7 +111,6 @@ main{
 }
 
 .row5{
-    display: grid;
     width: 1135px;
     height: 65px;
 
