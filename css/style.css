@@ -5,6 +5,7 @@ body{
 main{
     align-self: center;
     justify-self: center;
+    justify-items: center;
 }
 
 #textDiv{
@@ -17,13 +18,18 @@ main{
 }
 
 #visual{
-    animation: flash 1.5s linear infinite;
+    animation: flash 1s linear infinite;
 }
 
 @keyframes flash{
     50%{
         opacity: 0;
     }
+}
+
+button{
+    height: 35px;
+    margin: 10px;
 }
 
 .menuIcon{

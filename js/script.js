@@ -1,5 +1,12 @@
+let main = document.getElementById("main")
 let textDiv = document.getElementById("textDiv")
 let visual = document.getElementById("visual")
+
+const letters_5 = ["lugia", "klink", "snivy", "zubat", "eevee"]
+const letters_6 = ["flygon", "mewtwo", "komala", "lombre", "gengar"]
+const letters_7 = ["scyther", "rhyhorn", "pikachu", "spearow", "machoke"]
+const letters_8 = ["dragalge", "dusknoir", "inteleon", "charizard", "blastoise"]
+const letters_9 = ["pachirisu", "gardevoir", "toucannon", "scorbunny", "bulbasaur"]
 
 document.addEventListener("keydown", (event) =>{
     let code = document.getElementById(event.code);
@@ -11,8 +18,8 @@ document.addEventListener("keydown", (event) =>{
             if (code === Backquote || code === Digit1 || code === Digit2
                     || code === Digit3 || code === Digit5 || code === Digit6 || code === Digit7 
                     || code === KeyY|| code === Digit0 || code == Minus || code === KeyQ
-                    || code === KeyV || code === KeyW || code === KeyE || code === KeyR || code === KeyT
-                    || code === KeyU || code === KeyI || code === KeyO || code === KeyP 
+                    || code === KeyV || code === KeyW || code === KeyE || code === KeyR
+                    || code === KeyU || code === KeyI || code === KeyO || code === KeyT
                     || code === KeyA || code === KeyS || code === KeyD || code === KeyF 
                     || code === KeyG || code === KeyH || code === KeyJ || code === KeyK 
                     || code === KeyK || code === KeyL || code === KeyZ || code === KeyX 
@@ -30,9 +37,13 @@ document.addEventListener("keydown", (event) =>{
                     textDiv.appendChild(visual)
                 }
             }
-            // else if(code === Enter){
-            //     textDiv.appendChild(<p></p>)
-            // }
+            else if(code === KeyP){
+                let text = document.createTextNode(event.key);
+                textDiv.appendChild(text)
+                textDiv.appendChild(visual)
+                var audio = new Audio('filer/fart.mp3')
+                audio.play()
+            }
         }
 
         if(code === Backspace){
