@@ -3,9 +3,14 @@ body{
 }
 
 main{
-    align-self: center;
     justify-self: center;
+    justify-content: center;
     justify-items: center;
+}
+
+#imagecont{
+    align-items: center;
+    align-content: center;
 }
 
 #textDiv{
