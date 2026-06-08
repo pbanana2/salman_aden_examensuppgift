@@ -7,6 +7,8 @@ let pokemon_image = document.getElementById("pokemon_image")
 
 document.addEventListener("keydown", (event) =>{
     let code = document.getElementById(event.code);
+    var audio = new Audio('filer/click.mp3')
+    audio.play()
     console.log(event)
     if(code != CapsLock){
         document.getElementsByClassName("R").style="animation-duration: 1s"
@@ -22,13 +24,11 @@ document.addEventListener("keydown", (event) =>{
                     || code === KeyK || code === KeyL || code === KeyZ || code === KeyX 
                     || code === KeyC || code === KeyB || code === KeyN || code === KeyM
                     || code === Comma || code === Period || code === Slash || code === BracketLeft
-                    || code === Semicolon || code === Quote || code === IntlBackslash || code === Space){
+                    || code === Semicolon || code === Quote || code === Space){
                 let text = document.createTextNode(event.key);
                 textDiv.appendChild(text)
                 textDiv.appendChild(visual)
                 answer += event.key
-                var audio = new Audio('filer/click.mp3')
-                audio.play()
             }
             else if(code === Digit4 || code === Digit8 || code === Digit9){
                 if (ShiftLeft.style.backgroundColor != "blue" && ShiftRight.style.backgroundColor != "blue"){
@@ -36,8 +36,7 @@ document.addEventListener("keydown", (event) =>{
                     textDiv.appendChild(text)
                     textDiv.appendChild(visual)
                     answer += event.key
-                    var audio = new Audio('filer/click.mp3')
-                    audio.play()
+
                 }
             }
             else if(code === KeyP){
@@ -47,6 +46,31 @@ document.addEventListener("keydown", (event) =>{
                 var audio = new Audio('filer/fart.mp3')
                 audio.play()
                 answer += event.key
+            }
+        }
+
+        if (code === IntlBackslash){
+            let r =document.getElementsByClassName("R")
+            let l = document.getElementsByClassName("L")
+            if (AltRight.style.backgroundColor != "blue"){
+                if (ShiftLeft.style.backgroundColor == "blue" || ShiftRight.style.backgroundColor == "blue"){
+                    for(let i=0; i < r.length; i++){
+                        r[i].style.animationDuration="1s"
+                    }
+                }
+                else{
+                    for(let i=0; i < l.length; i++){
+                        l[i].style.animationDuration="1s"
+                    }
+                }
+            }
+            else{
+                for(let i=0; i < r.length; i++){
+                    r[i].style.animationDuration="0s"
+                }
+                for(let i=0; i < l.length; i++){
+                    l[i].style.animationDuration="0s"
+                }    
             }
         }
 

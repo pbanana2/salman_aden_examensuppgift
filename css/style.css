@@ -9,7 +9,6 @@ main{
 }
 
 #imagecont{
-    align-items: center;
     align-content: center;
 }
 
@@ -59,13 +58,13 @@ button{
 
 @keyframes moveRight{
     50%{
-        transform: translate(80px);
+        transform: translate(70px);
     }
 }
 
 @keyframes moveLeft{
     50%{
-        transform: translate(-80px);
+        transform: translate(-70px);
     }
 }
 
@@ -169,10 +168,6 @@ button{
 
 .columnContainer{
     flex-direction: column;
-}
-
-.rowContainer{
-    flex-direction: row;
 }
 
 #ShiftRight{
