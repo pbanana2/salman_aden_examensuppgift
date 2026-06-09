@@ -36,7 +36,6 @@ document.addEventListener("keydown", (event) =>{
                     textDiv.appendChild(text)
                     textDiv.appendChild(visual)
                     answer += event.key
-
                 }
             }
             else if(code === KeyP){
@@ -70,7 +69,7 @@ document.addEventListener("keydown", (event) =>{
                 }
                 for(let i=0; i < l.length; i++){
                     l[i].style.animationDuration="0s"
-                }    
+                }
             }
         }
 
@@ -93,7 +92,8 @@ document.addEventListener("keydown", (event) =>{
             event.preventDefault()
             if(playing == "yes"){
                 if (answer.toLowerCase() == pokemon){
-                    var audio = new Audio('')
+                    var audio = new Audio('filer/nice.mp3')
+                    audio.play()
                     index = current_list.indexOf(pokemon)
                     current_list.splice(index, 1)
                     alert("correct!")
@@ -134,7 +134,7 @@ document.addEventListener("keyup", (event) =>{
 })
 
 const letters_5 = ["lugia", "klink", "snivy", "zubat", "eevee", "absol", "rotom", "bagon"]
-const letters_6 = ["flygon", "mewtwo", "komala", "lombre", "gengar", "piplup", "bidoof"]
+const letters_6 = ["flygon", "mewtwo", "komala", "lombre", "gengar", "piplup", "bidoof", "lechonk"]
 const letters_7 = ["scyther", "rhyhorn", "pikachu", "spearow", "machoke", "dratini", "altaria"]
 const letters_8 = ["giratina", "dusknoir", "inteleon", "charizard", "blastoise", "regirock", "vaporeon"]
 const letters_9 = ["pachirisu", "gardevoir", "toucannon", "scorbunny", "bulbasaur", "tyranitar"]
@@ -144,7 +144,7 @@ var playing = "no"
 
 function random_5(){
     playing = "yes"
-    message.innerHTML = "Who's that pokemon?"
+    message.innerHTML = "Who's that pokémon?"
     current_list = letters_5
     pokemon = letters_5[Math.floor(Math.random() * letters_5.length)]
     document.getElementById("pokemon_image").src="filer/pokemon/" + pokemon + ".avif"
@@ -152,7 +152,7 @@ function random_5(){
 
 function random_6(){
     playing = "yes"
-    message.innerHTML = "Who's that pokemon?"
+    message.innerHTML = "Who's that pokémon?"
     current_list = letters_6
     pokemon = letters_6[Math.floor(Math.random() * letters_6.length)]
     document.getElementById("pokemon_image").src="filer/pokemon/" + pokemon + ".avif"
@@ -160,7 +160,7 @@ function random_6(){
 
 function random_7(){
     playing = "yes"
-    message.innerHTML = "Who's that pokemon?"
+    message.innerHTML = "Who's that pokémon?"
     current_list = letters_7
     pokemon = letters_7[Math.floor(Math.random() * letters_7.length)]
     document.getElementById("pokemon_image").src="filer/pokemon/" + pokemon + ".avif"
@@ -168,7 +168,7 @@ function random_7(){
 
 function random_8(){
     playing = "yes"
-    message.innerHTML = "Who's that pokemon?"
+    message.innerHTML = "Who's that pokémon?"
     current_list = letters_8
     pokemon = letters_8[Math.floor(Math.random() * letters_8.length)]
     document.getElementById("pokemon_image").src="filer/pokemon/" + pokemon + ".avif"
@@ -176,7 +176,7 @@ function random_8(){
 
 function random_9(){
     playing = "yes"
-    message.innerHTML = "Who's that pokemon?"
+    message.innerHTML = "Who's that pokémon?"
     current_list = letters_9
     pokemon = letters_9[Math.floor(Math.random() * letters_9.length)]
     document.getElementById("pokemon_image").src="filer/pokemon/" + pokemon + ".avif"
